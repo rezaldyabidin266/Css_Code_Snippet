@@ -1,0 +1,44 @@
+* {
+  /* Pilih semua elemen */
+  color: red;
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  padding-left: 2px;
+}
+
+h2 {
+  /* Memilih semua h2 elemen */
+  color: blue;
+  margin-top: 10px;
+}
+
+.SelectorClass {
+  /* Memilih semua elemen dengan class="SelectorClass" */
+  color: green;
+  margin-top: 10px;
+}
+
+#SelectorId {
+  /* Memilih semua elemen dengan id="SelectorId" */
+  color: orange;
+  margin-top: 10px;
+}
+
+.box1 > .box2 {
+  /* Memilih semua class="box2" dimana induknya adalah class="box1" */
+  margin-top: 5px;
+  color: purple;
+}
+
+.box1 .box3 {
+  /*  Pilih semua class="box3" di dalam class="box1"  */
+  color: navy;
+  margin-top: 5px;
+}
+
+.box1 + .SelectorClass {
+  /* Memilih class="SelectorClass" pertama yang ditempatkan segera setelah class="box1" */
+  color: violet;
+}

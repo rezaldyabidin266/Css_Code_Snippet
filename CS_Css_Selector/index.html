@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selector</title>
+
+    <!-- Css (External File) -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- End Css (External File) -->
+  </head>
+  <body>
+    <h2 class="mt">Selector Tag => h1{} <br />// Memilih semua h2 elemen</h2>
+    <h2 class="SelectorClass mt">
+      Selector Class => .SelectorClass{} <br />// Memilih semua elemen dengan
+      class="SelectorClass"
+    </h2>
+    <h2 id="SelectorId">
+      Selector Id => #SelectorId{} <br />// Memilih semua elemen dengan
+      id="SelectorId"
+    </h2>
+    <h1>Selector All(*) => *{} <br />// Pilih semua elemen</h1>
+    <h2 class="box1">
+      box-1 (pembungkus)
+      <p class="box2">
+        box-2 Selector (>) => .box1 > .box2{} <br />// Memilih semua
+        class="box2" di mana induknya adalah class="box1"
+      </p>
+      <p class="box3">
+        box-3 Selector (spasi) => .box1 .box3{} <br />// Pilih semua
+        class="box3" di dalam class="box1"
+      </p>
+    </h2>
+    <h2 class="SelectorClass">
+      SelectorClass Selector (+) => .box1 + .SelectorClass{} <br />
+      // Memilih class="SelectorClass" pertama yang ditempatkan segera setelah
+      class="box1"
+    </h2>
+  </body>
+</html>
